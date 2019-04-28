@@ -1,5 +1,5 @@
 @ECHO off
-REM V1.0
+REM V1.1
 REM https://github.com/Technetium1
 REM Licensed under The Unlicense [unlicense.org]
 
@@ -28,11 +28,11 @@ IF ERRORLEVEL 1 (
   PAUSE
   EXIT
 ) ELSE (
-  CALL :Update
+  CALL :CheckPackages
 )
 
 :CheckPackages
-IF exist %~dp0ChocolateyPackages.txt ( set /p PKGLIST=<%~dp0ChocolateyPackages.txt ) ELSE ( powershell Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/Technetium1/ChocolateyUpdate/master/ChocolateyPackages.txt' -OutFile %~dp0ChocolateyPackages.txt ; CALL :NoPackages)
+IF exist %~dp0ChocolateyPackages.txt (set /p PKGLIST=<%~dp0ChocolateyPackages.txt && CALL :Update) ELSE (powershell Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/Technetium1/ChocolateyUpdate/master/ChocolateyPackages.txt' -OutFile %~dp0ChocolateyPackages.txt && CALL :NoPackages)
 
 :Update
 ECHO Administrator check passed!

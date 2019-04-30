@@ -1,7 +1,11 @@
 @ECHO off
-REM V1.1
+REM V1.2
 REM https://github.com/Technetium1
 REM Licensed under The Unlicense [unlicense.org]
+
+REM PowerShell doesn't like spaces in paths
+set PSPATH=%~dp0ChocolateyPackages.txt
+set PSPATH=%PSPATH: =` %
 
 TITLE Tech's Chocolatey Updater
 CLS
@@ -32,7 +36,7 @@ IF ERRORLEVEL 1 (
 )
 
 :CheckPackages
-IF exist %~dp0ChocolateyPackages.txt (set /p PKGLIST=<%~dp0ChocolateyPackages.txt && CALL :Update) ELSE (powershell Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/Technetium1/ChocolateyUpdate/master/ChocolateyPackages.txt' -OutFile %~dp0ChocolateyPackages.txt && CALL :NoPackages)
+IF exist %~dp0ChocolateyPackages.txt (set /p PKGLIST=<%~dp0ChocolateyPackages.txt && CALL :Update) ELSE (powershell Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/Technetium1/ChocolateyUpdate/master/ChocolateyPackages.txt' -OutFile %PSPATH% && CALL :NoPackages)
 
 :Update
 ECHO Administrator check passed!

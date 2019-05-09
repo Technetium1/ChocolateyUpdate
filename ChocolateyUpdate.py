@@ -76,8 +76,9 @@ def admincheck():
             print("NO CHOCOLATEY INSTALLED!")
             installchoco = "start /wait powershell.exe Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
             system(installchoco)
-            ctypes.windll.shell32.ShellExecuteW(
-                None, "runas", sys.executable, sys.argv[0], None, 1)
+            print('\nPlease restart the program!\n')
+            system('pause')
+            exit(1)
     else:
         printascii()
         print("ATTEMPTING TO GET ADMINISTRATOR PERMISSIONS!")

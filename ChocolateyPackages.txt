@@ -22,7 +22,6 @@ hexchat
 hourglass.install
 imageresizerapp
 imgburn
-iperf3
 libreoffice-fresh
 mumble
 nmap

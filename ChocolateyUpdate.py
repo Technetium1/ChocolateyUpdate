@@ -5,8 +5,8 @@ from os import system
 from shutil import which
 from pathlib import Path
 from requests import get
+from ctypes import windll
 import sys
-import ctypes
 
 
 def printascii():
@@ -68,7 +68,7 @@ def checkforpackages():
 
 
 def admincheck():
-    if ctypes.windll.shell32.IsUserAnAdmin():
+    if windll.shell32.IsUserAnAdmin():
         printascii()
         if which("choco") is not None:
             checkforpackages()
@@ -82,7 +82,7 @@ def admincheck():
     else:
         printascii()
         print("ATTEMPTING TO GET ADMINISTRATOR PERMISSIONS!")
-        ctypes.windll.shell32.ShellExecuteW(
+        windll.shell32.ShellExecuteW(
             None, "runas", sys.executable, sys.argv[0], None, 1)
 
 

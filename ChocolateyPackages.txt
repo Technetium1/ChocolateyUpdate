@@ -8,6 +8,7 @@ cdburnerxp
 chocolateygui
 coretemp
 cpu-z.install
+crystaldiskinfo.install
 curl
 defraggler
 dotnet4.7
@@ -15,6 +16,7 @@ etcher
 everything
 f.lux
 firefox
+gimp
 gpg4win
 hackfont
 hashcheck

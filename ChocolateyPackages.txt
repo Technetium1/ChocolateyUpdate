@@ -15,6 +15,7 @@ dotnet4.7
 etcher
 everything
 f.lux
+filezilla
 firefox
 gimp
 gpg4win

@@ -11,7 +11,7 @@ import sys
 
 def printascii():
     system('cls')
-    system('title Tech\'s Chocolate Updater')
+    system('title Tech\'s Chocolatey Updater')
     print(r"""
 .---..-- .- .  .\\ ,-.    .- .  . .-.  .- .-. .   .. .---..--.   .  .  . .-. .-.  .. .---..--.-.
   |  |  /   |  |  (   `  /   |  |/   \/  /   \|  /  \  |  |   \ /   |  | |  )|  \/  \  |  |  |  )

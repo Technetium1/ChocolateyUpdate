@@ -1,17 +1,19 @@
-# V1.0
 # https://github.com/Technetium1
 # Licensed under The Unlicense [unlicense.org]
 from os import system
 from shutil import which
 from pathlib import Path
-from requests import get
 from ctypes import windll
+import urllib3
+import certifi
 import sys
+
+version = 'V1.1'
 
 
 def printascii():
     system('cls')
-    system('title Tech\'s Chocolatey Updater')
+    system('title Tech\'s Chocolatey Updater ' + version)
     print(r"""
 .---..-- .- .  .\\ ,-.    .- .  . .-.  .- .-. .   .. .---..--.   .  .  . .-. .-.  .. .---..--.-.
   |  |  /   |  |  (   `  /   |  |/   \/  /   \|  /  \  |  |   \ /   |  | |  )|  \/  \  |  |  |  )
@@ -19,7 +21,7 @@ def printascii():
   |  |  \   |  |  .   )  \   |  |\   /\  \   /|  |  |  |  |    |    |  | |   |  /|  |  |  |  |  \
   '  '-- `- '  '   `-'    `- '  ' '-'  `- `-' `--'  '  '  `--  '    `--` '   '-' '  '  '  '--'   '
           """)
-    print('\n')
+    print('\n' + version + '\n')
 
 
 def nopackagefile():
@@ -41,8 +43,14 @@ Edit out any unwanted programs and then rerun!
 ####################################################
         """)
     packagesurl = 'https://raw.githubusercontent.com/Technetium1/ChocolateyUpdate/master/ChocolateyPackages.txt'
-    r = get(packagesurl, allow_redirects=True)
-    open('ChocolateyPackages.txt', 'wb').write(r.content)
+    http = urllib3.PoolManager(ca_certs=certifi.where())
+    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+    r = http.request(
+        'GET',
+        packagesurl,
+        timeout=urllib3.Timeout(connect=10.0, read=10.0),
+        retries=4)
+    open('ChocolateyPackages.txt', 'wb').write(r.data)
     system('pause')
     exit(1)
 

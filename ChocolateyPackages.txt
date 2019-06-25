@@ -17,6 +17,7 @@ crystaldiskmark
 curl
 defraggler
 dotnet4.7
+dupeguru
 etcher
 everything
 f.lux

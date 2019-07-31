@@ -40,6 +40,7 @@ mremoteng
 mumble
 nmap
 notepadplusplus.install
+openshot
 openssh
 opera
 osfmount

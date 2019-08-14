@@ -8,7 +8,7 @@ import urllib3
 import certifi
 import sys
 
-version = 'V1.1'
+version = 'V1.2'
 
 
 def printascii():
@@ -52,7 +52,7 @@ Edit out any unwanted programs and then rerun!
         retries=4)
     open('ChocolateyPackages.txt', 'wb').write(r.data)
     system('pause')
-    exit(1)
+    sys.exit(1)
 
 
 def installpackages():
@@ -86,7 +86,7 @@ def admincheck():
             system(installchoco)
             print('\nPlease restart the program!\n')
             system('pause')
-            exit(1)
+            sys.exit(1)
     else:
         printascii()
         print("ATTEMPTING TO GET ADMINISTRATOR PERMISSIONS!")

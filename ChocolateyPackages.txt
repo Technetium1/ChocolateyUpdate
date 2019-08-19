@@ -4,6 +4,7 @@ audacity
 audacity-ffmpeg
 audacity-lame
 bleachbit
+blender
 bluegriffon
 borderlessgaming
 calibre

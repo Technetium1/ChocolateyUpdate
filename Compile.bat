@@ -6,6 +6,7 @@ CD %~dp0
 python -m pip install -U pyinstaller
 python -m pip install -r %~dp0requirements.txt
 pyinstaller -F -i choco.ico --clean ChocolateyUpdate.py
+RMDIR /S /Q build __pycache__
 ECHO Done! File is located in %~dp0dist
 PAUSE
 EXIT

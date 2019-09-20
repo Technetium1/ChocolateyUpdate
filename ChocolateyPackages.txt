@@ -8,6 +8,7 @@ blender
 bluegriffon
 borderlessgaming
 calibre
+cascadiacode
 ccleaner
 cdburnerxp
 chocolateygui

@@ -3,6 +3,7 @@ astrogrep
 audacity
 audacity-ffmpeg
 audacity-lame
+autoclicker
 bleachbit
 blender
 bluegriffon

@@ -78,7 +78,7 @@ def checkforpackages():
 def admincheck():
     if windll.shell32.IsUserAnAdmin():
         printascii()
-        stopcontrolledfolderaccess = "powershell.exe -Command Set-MpPreference -EnableControlledFolderAccess Disabled"
+        stopcontrolledfolderaccess = "powershell.exe -Command Set-MpPreference -EnableControlledFolderAccess Disabled > nul 2>&1"
         system(stopcontrolledfolderaccess)
         if which("choco") is not None:
             checkforpackages()

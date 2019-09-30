@@ -8,7 +8,7 @@ import urllib3
 import certifi
 import sys
 
-version = 'V1.2'
+version = 'V1.3'
 
 
 def printascii():
@@ -78,6 +78,8 @@ def checkforpackages():
 def admincheck():
     if windll.shell32.IsUserAnAdmin():
         printascii()
+        stopcontrolledfolderaccess = "powershell.exe -Command Set-MpPreference -EnableControlledFolderAccess Disabled"
+        system(stopcontrolledfolderaccess)
         if which("choco") is not None:
             checkforpackages()
         else:

@@ -32,6 +32,7 @@ hackfont
 hashcheck
 hexchat
 hourglass.install
+hwinfo.install
 imageresizerapp
 imgburn
 inkscape

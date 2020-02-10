@@ -1,8 +1,6 @@
 7zip
 astrogrep
 audacity
-audacity-ffmpeg
-audacity-lame
 autoclicker
 bleachbit
 blender

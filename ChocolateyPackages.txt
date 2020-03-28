@@ -25,6 +25,7 @@ f.lux
 filezilla
 firefox
 gimp
+git.install --params "/GitOnlyOnPath /WindowsTerminal /NoShellIntegration /NoGuiHereIntegration /NoShellHereIntegration"
 gpg4win
 hackfont
 hashcheck

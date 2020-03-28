@@ -1,14 +1,17 @@
 # Tech's Chocolatey Updater
+
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/Technetium1/ChocolateyUpdate.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Technetium1/ChocolateyUpdate/context:python) [![Total alerts](https://img.shields.io/lgtm/alerts/g/Technetium1/ChocolateyUpdate.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Technetium1/ChocolateyUpdate/alerts/)
 
 ---
 
 # [🢂 CLICK HERE TO GET STARTED NOW! 🢀](https://github.com/Technetium1/ChocolateyUpdate/releases/latest/download/ChocolateyUpdate.exe)
-* Only successfully tested with Windows 8.1+
+
+- Only successfully tested with Windows 8.1+
 
 ---
 
 # Need help? Join the Discord!
+
 [<img src="https://discordapp.com/assets/e4923594e694a21542a489471ecffa50.svg" width="350" height="198" alt="Discord Invite" title="Join Discord">](https://discord.gg/wB78XMZ)
 
 ---

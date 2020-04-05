@@ -1,6 +1,6 @@
 # Tech's Chocolatey Updater
 
-[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/Technetium1/ChocolateyUpdate.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Technetium1/ChocolateyUpdate/context:python) [![Total alerts](https://img.shields.io/lgtm/alerts/g/Technetium1/ChocolateyUpdate.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Technetium1/ChocolateyUpdate/alerts/)
+[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/Technetium1/ChocolateyUpdate.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Technetium1/ChocolateyUpdate/context:python) [![Total alerts](https://img.shields.io/lgtm/alerts/g/Technetium1/ChocolateyUpdate.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Technetium1/ChocolateyUpdate/alerts/) ![Discord](https://discordapp.com/api/guilds/260151582337794058/widget.png)
 
 ---
 

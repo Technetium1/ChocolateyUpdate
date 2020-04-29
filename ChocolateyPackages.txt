@@ -50,6 +50,7 @@ openssh
 opera
 osfmount
 paint.net
+pdfxchangeeditor
 pidgin
 pidgin-otr
 postman

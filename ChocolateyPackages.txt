@@ -63,6 +63,7 @@ silverlight
 skype
 speccy
 sumatrapdf.install
+synfig --pre
 tightvnc
 unifying
 vim

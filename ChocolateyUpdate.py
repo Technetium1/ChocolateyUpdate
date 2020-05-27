@@ -43,13 +43,13 @@ Edit out any unwanted programs and then rerun!
 ####################################################
         """)
     packagesurl = 'https://raw.githubusercontent.com/Technetium1/ChocolateyUpdate/master/ChocolateyPackages.txt'
-    http = urllib3.PoolManager(ca_certs = certifi.where())
+    http = urllib3.PoolManager(ca_certs=certifi.where())
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
     r = http.request(
-        'GET', 
-        packagesurl, 
-        timeout = urllib3.Timeout(connect = 10.0, read = 10.0), 
-        retries = 4)
+        'GET',
+        packagesurl,
+        timeout=urllib3.Timeout(connect=10.0, read=10.0),
+        retries=4)
     with open('ChocolateyPackages.txt', 'wb') as chocopkgs:
         chocopkgs.write(r.data)
     system('pause')

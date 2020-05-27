@@ -1,2 +1,2 @@
-certifi>=2019.9.11
-urllib3>=1.25.6
+certifi>=2020.4.5.1
+urllib3>=1.25.9

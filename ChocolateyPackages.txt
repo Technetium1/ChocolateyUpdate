@@ -26,6 +26,7 @@ filezilla
 firefox
 gimp
 git.install --params "/GitOnlyOnPath /WindowsTerminal /NoShellIntegration /NoGuiHereIntegration /NoShellHereIntegration"
+gnuwin32-coreutils.portable
 gpg4win
 hackfont
 hashcheck
@@ -49,6 +50,7 @@ openssh
 opera
 osfmount
 paint.net
+pdfxchangeeditor
 pidgin
 pidgin-otr
 postman
@@ -61,6 +63,7 @@ silverlight
 skype
 speccy
 sumatrapdf.install
+synfig --pre
 tightvnc
 unifying
 vim

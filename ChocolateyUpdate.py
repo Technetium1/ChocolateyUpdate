@@ -50,9 +50,10 @@ Edit out any unwanted programs and then rerun!
         packagesurl, 
         timeout = urllib3.Timeout(connect = 10.0, read = 10.0), 
         retries = 4)
-    open('ChocolateyPackages.txt', 'wb').write(r.data)
+    with open('ChocolateyPackages.txt', 'wb') as chocopkgs:
+        chocopkgs.write(r.data)
     system('pause')
-    sys.exit(1)
+    raise SystemExit
 
 
 def installpackages():
@@ -88,7 +89,7 @@ def admincheck():
             system(installchoco)
             print('\nPlease restart the program!\n')
             system('pause')
-            sys.exit(1)
+            raise SystemExit
     else:
         printascii()
         print("ATTEMPTING TO GET ADMINISTRATOR PERMISSIONS!")

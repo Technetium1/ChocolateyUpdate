@@ -8,12 +8,12 @@ import urllib3
 import certifi
 import sys
 
-version = 'V1.3'
+version = '1.3'
 
 
 def printascii():
     system('cls')
-    system('title Tech\'s Chocolatey Updater ' + version)
+    system('title Tech\'s Chocolatey Updater V' + version)
     print(r"""
 .---..-- .- .  .\\ ,-.    .- .  . .-.  .- .-. .   .. .---..--.   .  .  . .-. .-.  .. .---..--.-.
   |  |  /   |  |  (   `  /   |  |/   \/  /   \|  /  \  |  |   \ /   |  | |  )|  \/  \  |  |  |  )
@@ -21,7 +21,7 @@ def printascii():
   |  |  \   |  |  .   )  \   |  |\   /\  \   /|  |  |  |  |    |    |  | |   |  /|  |  |  |  |  \
   '  '-- `- '  '   `-'    `- '  ' '-'  `- `-' `--'  '  '  `--  '    `--` '   '-' '  '  '  '--'   '
           """)
-    print('\n' + version + '\n')
+    print('\n' + 'V' + version + '\n')
 
 
 def nopackagefile():
@@ -50,9 +50,10 @@ Edit out any unwanted programs and then rerun!
         packagesurl,
         timeout=urllib3.Timeout(connect=10.0, read=10.0),
         retries=4)
-    open('ChocolateyPackages.txt', 'wb').write(r.data)
+    with open('ChocolateyPackages.txt', 'wb') as chocopkgs:
+        chocopkgs.write(r.data)
     system('pause')
-    sys.exit(1)
+    raise SystemExit
 
 
 def installpackages():
@@ -88,7 +89,7 @@ def admincheck():
             system(installchoco)
             print('\nPlease restart the program!\n')
             system('pause')
-            sys.exit(1)
+            raise SystemExit
     else:
         printascii()
         print("ATTEMPTING TO GET ADMINISTRATOR PERMISSIONS!")

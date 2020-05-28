@@ -36,6 +36,7 @@ hwinfo.install
 imageresizerapp
 imgburn
 inkscape
+iperf3
 kdenlive
 krita
 libreoffice-fresh

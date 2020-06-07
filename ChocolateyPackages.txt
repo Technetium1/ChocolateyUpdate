@@ -45,6 +45,7 @@ mremoteng
 mumble
 nmap
 notepadplusplus.install
+nuclear
 openscad
 openshot
 openssh

@@ -48,7 +48,7 @@ Edit out any unwanted programs and then rerun!
     r = http.request(
         'GET',
         packagesurl,
-        timeout=urllib3.Timeout(connect=10.0, read=10.0),
+        timeout=urllib3.Timeout(connect=15.0, read=15.0),
         retries=4)
     with open('ChocolateyPackages.txt', 'wb') as chocopkgs:
         chocopkgs.write(r.data)

@@ -7,7 +7,7 @@
 
 # [🢂 CLICK HERE TO GET STARTED NOW! 🢀](https://github.com/Technetium1/ChocolateyUpdate/releases/latest/download/ChocolateyUpdate.exe)
 
-- Only successfully tested with Windows 8.1+
+- Compatibile with Windows 10 Version 1909 and later
 
 ---
 

@@ -8,7 +8,7 @@ import urllib3
 import certifi
 import sys
 
-version = '1.3'
+version = '1.4'
 
 
 def printascii():
@@ -85,7 +85,7 @@ def admincheck():
             checkforpackages()
         else:
             print("NO CHOCOLATEY INSTALLED!")
-            installchoco = "start /wait powershell.exe Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
+            installchoco = "start /wait powershell.exe Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
             system(installchoco)
             print('\nPlease restart the program!\n')
             system('pause')

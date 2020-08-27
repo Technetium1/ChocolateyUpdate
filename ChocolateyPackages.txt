@@ -11,6 +11,7 @@ cascadiacode
 ccleaner
 cdburnerxp
 chocolateygui
+compactgui
 coretemp
 cpu-z.install
 crystaldiskinfo.install

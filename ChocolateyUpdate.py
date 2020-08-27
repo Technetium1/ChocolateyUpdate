@@ -120,13 +120,13 @@ def selfupdate():
     currentversion = updateresult["tag_name"]
     downloadlink = updateresult["assets"][0]["browser_download_url"]
     if currentversion > version:
-        print("Newer version found on GitHub!")
+        print("\nNewer version found on GitHub!\n")
     elif currentversion < version:
-        print("Version newer than what was found on GitHub!")
+        print("\nVersion newer than what was found on GitHub!\n")
     elif currentversion == version:
-        print("Already at latest GitHub release!")
+        print("\nAlready at latest GitHub release!\n")
     else:
-        print("Something went wrong checking for updates! If this continues report to https://github.com/Technetium1/ChocolateyUpdate")
+        print("\nSomething went wrong checking for updates! If this continues report to https://github.com/Technetium1/ChocolateyUpdate\n")
         system("pause")
         raise SystemExit
     if updateresult["assets"] and currentversion > version:

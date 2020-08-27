@@ -11,7 +11,7 @@ import json
 import certifi
 import sys
 
-version = "2.0"
+version = "2.1"
 
 
 def printascii():
@@ -85,6 +85,8 @@ def admincheck():
         printascii()
         stopcontrolledfolderaccess = "powershell.exe -Command Set-MpPreference -EnableControlledFolderAccess Disabled > nul 2>&1"
         system(stopcontrolledfolderaccess)
+        if Path("OldChocolateyUpdate.exe").exists():
+            remove("OldChocolateyUpdate.exe")
         if getattr(sys, "frozen", True):
             selfupdate()
         if which("choco") is not None:

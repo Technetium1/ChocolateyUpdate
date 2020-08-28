@@ -54,6 +54,7 @@ opera
 osfmount
 paint.net
 pdfxchangeeditor
+picard
 pidgin
 pidgin-otr
 postman

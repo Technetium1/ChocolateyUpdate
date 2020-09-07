@@ -17,6 +17,7 @@ cpu-z.install
 crystaldiskinfo.install
 crystaldiskmark
 curl
+debotnet
 defraggler
 dotnet4.7
 dupeguru

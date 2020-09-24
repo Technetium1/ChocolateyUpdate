@@ -14,6 +14,7 @@ chocolateygui
 compactgui
 coretemp
 cpu-z.install
+croc
 crystaldiskinfo.install
 crystaldiskmark
 curl

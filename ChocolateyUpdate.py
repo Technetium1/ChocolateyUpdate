@@ -11,7 +11,7 @@ import json
 import certifi
 import sys
 
-version = "2.2"
+version = "2.3"
 
 
 def printascii():
@@ -113,7 +113,7 @@ def selfupdate():
         "GET",
         updateurl,
         headers={"User-Agent": "curl", "Accept": "application/vnd.github.v3+json"},
-        timeout=urllib3.Timeout(connect=6.0, read=6.0),
+        timeout=urllib3.Timeout(connect=15.0, read=15.0),
         retries=4,
         redirect=False)
     updateresult = json.loads(r.data.decode("utf-8"))
@@ -139,7 +139,7 @@ def selfupdate():
             "GET",
             downloadlink,
             headers={"User-Agent": "curl"},
-            timeout=urllib3.Timeout(connect=10.0, read=120.0),
+            timeout=urllib3.Timeout(connect=15.0, read=120.0),
             retries=2,
             redirect=True)
         with open("NewChocolateyUpdate.exe", "wb") as downloadedfile:

@@ -33,6 +33,7 @@ gnuwin32-coreutils.portable
 gpg4win
 hackfont
 hashcheck
+haskell-dev
 hexchat
 hourglass.install
 hwinfo.install

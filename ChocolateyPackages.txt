@@ -63,6 +63,7 @@ pidgin-otr
 postman
 putty.install
 qbittorrent
+reaper
 recuva
 sharex
 shotcut

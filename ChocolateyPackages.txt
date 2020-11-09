@@ -32,6 +32,7 @@ git.install --params "/GitOnlyOnPath /WindowsTerminal /NoShellIntegration /NoGui
 gnuwin32-coreutils.portable
 gpg4win
 hackfont
+handbrake
 hashcheck
 haskell-dev
 hexchat

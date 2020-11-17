@@ -20,6 +20,7 @@ crystaldiskmark
 curl
 debotnet
 defraggler
+dos2unix
 dotnet4.7
 dupeguru
 etcher

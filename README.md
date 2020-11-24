@@ -17,7 +17,7 @@
 
 ---
 
-### Powered by [Python 3.8](https://www.python.org/) and [Pyinstaller](http://www.pyinstaller.org/)
+### Powered by [Python 3.9](https://www.python.org/) and [Pyinstaller](http://www.pyinstaller.org/)
 
 [<img src="https://images-na.ssl-images-amazon.com/images/I/51UQmrmjMXL.png" width="200" height="200" alt="Powered by Python 3" title="Powered by Python 3">](https://www.python.org/)
 

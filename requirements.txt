@@ -1,3 +1,3 @@
-certifi>=2020.6.20
-pyinstaller>=4.0
-urllib3>=1.25.10
+certifi>=2020.11.8
+pyinstaller>=4.1
+urllib3>=1.26.2

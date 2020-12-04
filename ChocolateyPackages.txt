@@ -6,6 +6,7 @@ bleachbit
 blender
 bluegriffon
 borderlessgaming
+bulk-crap-uninstaller
 calibre
 cascadiacode
 ccleaner

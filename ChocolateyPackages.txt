@@ -47,6 +47,7 @@ iperf3
 kdenlive
 krita
 libreoffice-fresh
+licecap
 mobaxterm
 mremoteng
 mumble

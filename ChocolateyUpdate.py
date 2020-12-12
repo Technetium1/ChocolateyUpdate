@@ -11,7 +11,7 @@ import json
 import certifi
 import sys
 
-version = "2.3"
+version = "2.4"
 
 
 def printascii():
@@ -117,41 +117,48 @@ def selfupdate():
         retries=4,
         redirect=False)
     updateresult = json.loads(r.data.decode("utf-8"))
-    currentversion = updateresult["tag_name"]
-    downloadlink = updateresult["assets"][0]["browser_download_url"]
-    if currentversion > version:
-        print("\nNewer version found on GitHub!\n")
-    elif currentversion < version:
-        print("\nVersion newer than what was found on GitHub!\n")
-    elif currentversion == version:
-        print("\nAlready at latest GitHub release!\n")
-    else:
-        print("\nSomething went wrong checking for updates! If this continues report to https://github.com/Technetium1/ChocolateyUpdate\n")
+    if updateresult.get("tag_name", None) is None:
+        print("\nFAILED SELF-UPDATE! GITHUB RATE LIMIT LIKELY EXCEEDED ON YOUR IP!\n")
+        print("\nCONTINUING WITHOUT SELF-UPDATE!\n")
         system("pause")
-        raise SystemExit
-    if updateresult["assets"] and currentversion > version:
-        print("Downloading new release from: " + downloadlink)
-        if Path("NewChocolateyUpdate.exe").exists():
-            remove("NewChocolateyUpdate.exe")
-        if Path("OldChocolateyUpdate.exe").exists():
-            remove("OldChocolateyUpdate.exe")
-        r = http.request(
-            "GET",
-            downloadlink,
-            headers={"User-Agent": "curl"},
-            timeout=urllib3.Timeout(connect=15.0, read=120.0),
-            retries=2,
-            redirect=True)
-        with open("NewChocolateyUpdate.exe", "wb") as downloadedfile:
-            downloadedfile.write(r.data)
-        rename("ChocolateyUpdate.exe", "OldChocolateyUpdate.exe")
-        system("attrib +h OldChocolateyUpdate.exe")
-        rename("NewChocolateyUpdate.exe", "ChocolateyUpdate.exe")
-        print("Update completed! Restart ChocolateyUpdate to complete!")
-        system("pause")
-        raise SystemExit
-    else:
+        print()
         pass
+    else:
+        currentversion = updateresult["tag_name"]
+        downloadlink = updateresult["assets"][0]["browser_download_url"]
+        if currentversion > version:
+            print("\nNewer version found on GitHub!\n")
+        elif currentversion < version:
+            print("\nVersion newer than what was found on GitHub!\n")
+        elif currentversion == version:
+            print("\nAlready at latest GitHub release!\n")
+        else:
+            print("\nSomething went wrong checking for updates! If this continues report to https://github.com/Technetium1/ChocolateyUpdate\n")
+            system("pause")
+            raise SystemExit
+        if updateresult["assets"] and currentversion > version:
+            print("Downloading new release from: " + downloadlink)
+            if Path("NewChocolateyUpdate.exe").exists():
+                remove("NewChocolateyUpdate.exe")
+            if Path("OldChocolateyUpdate.exe").exists():
+                remove("OldChocolateyUpdate.exe")
+            r = http.request(
+                "GET",
+                downloadlink,
+                headers={"User-Agent": "curl"},
+                timeout=urllib3.Timeout(connect=15.0, read=120.0),
+                retries=2,
+                redirect=True)
+            with open("NewChocolateyUpdate.exe", "wb") as downloadedfile:
+                downloadedfile.write(r.data)
+            rename("ChocolateyUpdate.exe", "OldChocolateyUpdate.exe")
+            system("attrib +h OldChocolateyUpdate.exe")
+            rename("NewChocolateyUpdate.exe", "ChocolateyUpdate.exe")
+            print("Update completed! Restart ChocolateyUpdate to complete!")
+            system("pause")
+            raise SystemExit
+        else:
+            pass
 
 
 admincheck()

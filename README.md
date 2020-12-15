@@ -13,7 +13,7 @@
 
 # Need help? Join the Discord!
 
-[<img src="https://discordapp.com/assets/e4923594e694a21542a489471ecffa50.svg" width="350" height="198" alt="Discord Invite" title="Join Discord">](https://discord.gg/wB78XMZ)
+[<img src="https://discordapp.com/assets/e4923594e694a21542a489471ecffa50.svg" width="350" height="198" alt="Discord Invite" title="Join Discord">](https://discord.gg/abnQKUJtcg)
 
 ---
 

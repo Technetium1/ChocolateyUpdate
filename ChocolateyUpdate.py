@@ -122,7 +122,6 @@ def selfupdate():
         print("\nCONTINUING WITHOUT SELF-UPDATE!\n")
         system("pause")
         print()
-        pass
     else:
         currentversion = updateresult["tag_name"]
         downloadlink = updateresult["assets"][0]["browser_download_url"]
@@ -158,7 +157,7 @@ def selfupdate():
             system("pause")
             raise SystemExit
         else:
-            pass
+            print("\nSomething went wrong checking for updates! If this continues report to https://github.com/Technetium1/ChocolateyUpdate\n")
 
 
 admincheck()

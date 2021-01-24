@@ -1,6 +1,6 @@
 # Tech's Chocolatey Updater
 
-[![HitCount](https://hits.dwyl.com/Technetium1/ChocolateyUpdate.svg)](https://hits.dwyl.com/Technetium1/ChocolateyUpdate) ![GitHub All Releases](https://img.shields.io/github/downloads/Technetium1/ChocolateyUpdate/total?color=24CC11&label=Total%20Downloads&logo=GitHub) 
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FTechnetium1%2FChocolateyUpdate&count_bg=%2324CC11&title_bg=%23000000&icon=&icon_color=%23E7E7E7&title=Hits&edge_flat=false)](https://hits.seeyoufarm.com) ![GitHub All Releases](https://img.shields.io/github/downloads/Technetium1/ChocolateyUpdate/total?color=24CC11&label=Total%20Downloads&logo=GitHub) 
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/Technetium1/ChocolateyUpdate.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Technetium1/ChocolateyUpdate/context:python) [![Total alerts](https://img.shields.io/lgtm/alerts/g/Technetium1/ChocolateyUpdate.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Technetium1/ChocolateyUpdate/alerts/) ![Discord](https://discordapp.com/api/guilds/260151582337794058/widget.png)
 
 ---

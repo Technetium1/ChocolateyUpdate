@@ -79,6 +79,7 @@ synfig --pre
 tightvnc
 unifying
 vim
+visualstudio2019-workload-vctools
 vlc
 webtorrent-desktop
 wget

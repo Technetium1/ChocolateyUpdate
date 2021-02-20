@@ -2,6 +2,7 @@
 astrogrep
 audacity
 autoclicker
+bitwarden
 bleachbit
 blender
 bluegriffon

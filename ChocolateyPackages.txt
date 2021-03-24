@@ -49,6 +49,7 @@ kdenlive
 krita
 libreoffice-fresh
 licecap
+mkcert
 mobaxterm
 mremoteng
 mumble

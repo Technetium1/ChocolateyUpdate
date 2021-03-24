@@ -65,6 +65,7 @@ picard
 pidgin
 pidgin-otr
 postman
+powertoys
 putty.install
 qbittorrent
 reaper

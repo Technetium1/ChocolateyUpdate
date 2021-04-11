@@ -40,6 +40,7 @@ hashcheck
 haskell-dev
 hexchat
 hourglass.install
+hugo
 hwinfo.install
 imageresizerapp
 imgburn

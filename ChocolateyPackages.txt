@@ -91,5 +91,6 @@ windirstat
 winscp.install
 xnshell.install
 xnview
+xnviewmp.install
 youtube-dl
 youtube-dl-gui

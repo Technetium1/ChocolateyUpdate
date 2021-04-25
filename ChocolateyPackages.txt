@@ -89,5 +89,6 @@ webtorrent-desktop
 wget
 windirstat
 winscp.install
+xnshell.install
 youtube-dl
 youtube-dl-gui

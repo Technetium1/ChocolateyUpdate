@@ -42,6 +42,7 @@ hexchat
 hourglass.install
 hugo
 hwinfo.install
+imageglass
 imageresizerapp
 imgburn
 inkscape

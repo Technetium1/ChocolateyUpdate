@@ -63,6 +63,7 @@ openshot
 openssh
 osfmount
 paint.net
+pandoc
 pdfxchangeeditor
 picard
 pidgin

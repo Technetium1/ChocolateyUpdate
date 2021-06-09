@@ -45,6 +45,7 @@ hwinfo.install
 imageglass
 imageresizerapp
 imgburn
+infekt
 inkscape
 iperf3
 kdenlive

@@ -11,7 +11,7 @@ import json
 import certifi
 import sys
 
-version = "2.5"
+version = "2.6"
 
 
 def printascii():
@@ -132,7 +132,7 @@ def selfupdate():
         elif currentversion == version:
             print("\nAlready at latest GitHub release!\n")
         else:
-            print("\nSomething went wrong checking for updates! If this continues please report to https://github.com/Technetium1/ChocolateyUpdate\n")
+            print("\nSomething unexpected happened while updating! If this continues please report to https://github.com/Technetium1/ChocolateyUpdate\n")
             system("pause")
             raise SystemExit
         if updateresult["assets"] and currentversion > version:
@@ -156,8 +156,6 @@ def selfupdate():
             print("Update completed! Restart ChocolateyUpdate to complete!")
             system("pause")
             raise SystemExit
-        else:
-            print("\nSomething unexpected happened while updating! If this continues please report to https://github.com/Technetium1/ChocolateyUpdate\n")
 
 
 admincheck()

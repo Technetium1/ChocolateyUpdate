@@ -114,7 +114,7 @@ def selfupdate():
         updateurl,
         headers={"User-Agent": "curl", "Accept": "application/vnd.github.v3+json"},
         timeout=urllib3.Timeout(connect=15.0, read=15.0),
-        retries=4,
+        retries=3,
         redirect=False)
     updateresult = json.loads(r.data.decode("utf-8"))
     if updateresult.get("tag_name", None) is None:
@@ -132,7 +132,7 @@ def selfupdate():
         elif currentversion == version:
             print("\nAlready at latest GitHub release!\n")
         else:
-            print("\nSomething went wrong checking for updates! If this continues report to https://github.com/Technetium1/ChocolateyUpdate\n")
+            print("\nSomething went wrong checking for updates! If this continues please report to https://github.com/Technetium1/ChocolateyUpdate\n")
             system("pause")
             raise SystemExit
         if updateresult["assets"] and currentversion > version:

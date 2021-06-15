@@ -11,7 +11,7 @@ import json
 import certifi
 import sys
 
-version = "2.4"
+version = "2.5"
 
 
 def printascii():
@@ -157,7 +157,7 @@ def selfupdate():
             system("pause")
             raise SystemExit
         else:
-            print("\nSomething went wrong checking for updates! If this continues report to https://github.com/Technetium1/ChocolateyUpdate\n")
+            print("\nSomething unexpected happened while updating! If this continues please report to https://github.com/Technetium1/ChocolateyUpdate\n")
 
 
 admincheck()

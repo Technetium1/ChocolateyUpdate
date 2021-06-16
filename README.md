@@ -8,7 +8,7 @@
 
 # [🢂 CLICK HERE TO GET STARTED NOW! 🢀](https://github.com/Technetium1/ChocolateyUpdate/releases/latest/download/ChocolateyUpdate.exe)
 
-- Compatible with [any currently supported](https://user-images.githubusercontent.com/9877150/108580196-724c7000-72f8-11eb-9f66-320b1b5c8a3b.png) version of Windows 10
+- Compatible with [any currently supported](https://user-images.githubusercontent.com/9877150/108580196-724c7000-72f8-11eb-9f66-320b1b5c8a3b.png) version of Windows 10 or 11
 
 ---
 

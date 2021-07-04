@@ -1,6 +1,5 @@
 7zip
 astrogrep
-audacity
 autoclicker
 bitwarden
 bleachbit

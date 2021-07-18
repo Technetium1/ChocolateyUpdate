@@ -58,6 +58,7 @@ mumble
 nmap
 notepadplusplus.install
 nuclear
+ocenaudio.install
 openscad
 openshot
 openssh

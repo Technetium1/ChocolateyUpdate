@@ -28,7 +28,6 @@ etcher
 everything
 f.lux
 filezilla
-firefox
 gimp
 git.install --params "/GitOnlyOnPath /WindowsTerminal /NoShellIntegration /NoGuiHereIntegration /NoShellHereIntegration"
 gnuwin32-coreutils.portable

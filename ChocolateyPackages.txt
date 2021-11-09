@@ -50,6 +50,7 @@ kdenlive
 krita
 libreoffice-fresh
 licecap
+makemkv
 mkcert
 mobaxterm
 mremoteng

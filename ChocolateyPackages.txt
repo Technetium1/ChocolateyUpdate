@@ -73,6 +73,7 @@ postman
 powertoys
 putty.install
 qbittorrent
+qbittorrent-enhanced
 reaper
 recuva
 sagethumbs

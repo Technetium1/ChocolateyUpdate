@@ -18,6 +18,7 @@ cpu-z.install
 croc
 crystaldiskinfo.install
 crystaldiskmark
+cura-new
 curl
 debotnet
 defraggler

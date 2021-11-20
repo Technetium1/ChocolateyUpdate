@@ -32,6 +32,7 @@ filezilla
 gimp
 git.install --params "/GitOnlyOnPath /WindowsTerminal /NoShellIntegration /NoGuiHereIntegration /NoShellHereIntegration"
 gnuwin32-coreutils.portable
+gpac
 gpg4win
 hackfont
 handbrake

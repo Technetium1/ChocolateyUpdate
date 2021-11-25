@@ -53,6 +53,7 @@ krita
 libreoffice-fresh
 licecap
 makemkv
+meshroom
 mkcert
 mobaxterm
 mremoteng

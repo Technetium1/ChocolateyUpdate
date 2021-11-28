@@ -70,6 +70,7 @@ osfmount
 paint.net
 pandoc
 pdfxchangeeditor
+peazip.install
 picard
 pidgin
 pidgin-otr

@@ -28,6 +28,7 @@ dupeguru
 etcher
 everything
 f.lux
+ffmpeg-full
 filezilla
 gimp
 git.install --params "/GitOnlyOnPath /WindowsTerminal /NoShellIntegration /NoGuiHereIntegration /NoShellHereIntegration"

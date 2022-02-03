@@ -103,3 +103,4 @@ xnview
 xnviewmp.install
 youtube-dl
 youtube-dl-gui
+yt-dlp

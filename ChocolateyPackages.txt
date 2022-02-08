@@ -55,6 +55,7 @@ libreoffice-fresh
 licecap
 makemkv
 meshroom
+mixxx
 mkcert
 mobaxterm
 mremoteng

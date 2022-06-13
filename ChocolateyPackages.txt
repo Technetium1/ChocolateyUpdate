@@ -58,6 +58,7 @@ meshroom
 mixxx
 mkcert
 mobaxterm
+motrix
 mremoteng
 mumble
 nmap

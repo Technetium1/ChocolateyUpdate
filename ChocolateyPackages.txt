@@ -82,6 +82,7 @@ powertoys
 putty.install
 qbittorrent
 qbittorrent-enhanced
+raven
 reaper
 recuva
 sagethumbs

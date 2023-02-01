@@ -11,6 +11,7 @@ calibre
 cascadiacode
 ccleaner
 cdburnerxp
+chatterino
 chocolateygui
 compactgui
 coretemp

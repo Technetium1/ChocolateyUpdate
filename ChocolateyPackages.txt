@@ -94,6 +94,7 @@ skype
 speccy
 sumatrapdf.install
 synfig --pre
+tartube
 tightvnc
 unifying
 vim

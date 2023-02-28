@@ -38,6 +38,7 @@ gpac
 gpg4win
 hackfont
 handbrake
+handbrake-cli
 hashcheck
 haskell-dev
 hexchat

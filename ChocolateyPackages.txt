@@ -103,6 +103,7 @@ visualstudio2019-workload-vctools
 vlc
 webtorrent-desktop
 wget
+winbtrfs
 windirstat
 winscp.install
 xnshell.install

@@ -13,6 +13,7 @@ ccleaner
 cdburnerxp
 chatterino
 chocolateygui
+cmake.install --installargs 'ADD_CMAKE_TO_PATH=System'
 compactgui
 coretemp
 cpu-z.install

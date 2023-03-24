@@ -86,6 +86,7 @@ putty.install
 qbittorrent
 qbittorrent-enhanced
 raven
+rclone
 reaper
 recuva
 sagethumbs

@@ -33,6 +33,7 @@ f.lux
 ffmpeg-full
 filezilla
 gimp
+git-lfs.install
 git.install --params "/GitOnlyOnPath /WindowsTerminal /NoShellIntegration /NoGuiHereIntegration /NoShellHereIntegration"
 gnuwin32-coreutils.portable
 gpac

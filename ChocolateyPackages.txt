@@ -57,6 +57,7 @@ kdenlive
 krita
 libreoffice-fresh
 licecap
+lunacy
 makemkv
 meshroom
 mixxx

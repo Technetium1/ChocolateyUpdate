@@ -74,7 +74,6 @@ obsidian
 ocenaudio.install
 openscad
 openshot
-openssh
 osfmount
 paint.net
 pandoc
